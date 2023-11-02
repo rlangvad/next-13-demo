@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": { "first": "Viivi", "last": "Kauppila" },
+    "country": "Finland",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/71.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/71.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/71.jpg"
+    }
+  },
+  {
+    "id": "2",
+    "name": { "first": "Edward", "last": "Morris" },
+    "country": "New Zealand",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/53.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/53.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/53.jpg"
+    }
+  },
+  {
+    "id": "3",
+    "name": { "first": "Bertram", "last": "Poulsen" },
+    "country": "Denmark",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/98.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/98.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/98.jpg"
+    }
+  },
+  {
+    "id": "4",
+    "name": { "first": "Deniz", "last": "Ertürk" },
+    "country": "Turkey",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/70.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/70.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/70.jpg"
+    }
+  },
+  {
+    "id": "5",
+    "name": { "first": "Antoine", "last": "Picard" },
+    "country": "France",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/14.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/14.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/14.jpg"
+    }
+  }
+]
