@@ -15,7 +15,7 @@ const CandidatePage = async ({ params }: { params: { id: string } }) => {
 
   const candidate: Candidate = await res.json();
 
-  // const candidate = getCandidate(params.id);
+  // const candidate = await getCandidate(params.id);
 
   if (!candidate) {
     return notFound();

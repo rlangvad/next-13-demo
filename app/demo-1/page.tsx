@@ -9,9 +9,11 @@ const DemoPage = () => {
       <ClientComponent />
 
       <h2 className="mt-12">Data rendered on server</h2>
-      <React.Suspense fallback={<p>Loading...</p>}>
-        <ServerComponent />
-      </React.Suspense>
+
+      {/* Wrap in Suspense to see the loading state */}
+      {/* <React.Suspense fallback={<p>Loading...</p>}> */}
+      <ServerComponent />
+      {/* </React.Suspense> */}
     </div>
   );
 };
