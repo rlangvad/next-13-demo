@@ -4,7 +4,7 @@ This is a simple application used to demonstrate some of the new features in Nex
 
 - React Server Components
 - App router
-  - Suspense
+- Suspense
 - Streaming
 - Parallel routes
 - Intercepting routes
