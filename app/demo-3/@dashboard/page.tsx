@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { DataItem } from "@/types/DataItem";
 
 const DashboardPage = async () => {
-  const res = await fetch("http://localhost:3000/api/data");
+  const res = await fetch("http://localhost:3000/api/data?delay=1000");
 
   const data = await res.json();
 

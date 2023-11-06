@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Candidate } from "@/types/Candidate";
 
 const CandidatesPage = async () => {
-  const res = await fetch("http://localhost:3000/api/candidates");
+  const res = await fetch("http://localhost:3000/api/candidates?delay=1000");
 
   const data = await res.json();
 
