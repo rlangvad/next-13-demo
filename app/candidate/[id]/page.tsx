@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Candidate } from "@/types/Candidate";
 import { notFound } from "next/navigation";
-// import getCandidate from "@/app/actions/candidate";
+import getCandidate from "@/app/actions/candidate";
 
 const CandidatePage = async ({ params }: { params: { id: string } }) => {
   const res = await fetch(
@@ -15,6 +15,7 @@ const CandidatePage = async ({ params }: { params: { id: string } }) => {
 
   const candidate: Candidate = await res.json();
 
+  // Uncomment to use server action instead
   // const candidate = await getCandidate(params.id);
 
   if (!candidate) {
