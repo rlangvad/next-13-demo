@@ -19,7 +19,7 @@ const data = [
   },
   {
     title: "Numbers",
-    value: "SEK 435",
+    value: "435",
   },
 ];
 
