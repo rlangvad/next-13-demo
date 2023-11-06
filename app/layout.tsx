@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CC Demo",
-  description: "CC Demo",
+  title: "Next 13 Demo | Crowd Collective",
+  description: "Next 13 Demo | Crowd Collective",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className="mx-auto mt-20 flex flex-col items-center lg:w-[1200px] ">
-          <Link href="/" className="text-4xl font-medi  um">
+          <Link href="/" className="text-4xl font-medium">
             <Image
               src="/cc-logo.svg"
               alt=""
