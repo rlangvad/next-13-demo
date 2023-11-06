@@ -34,7 +34,7 @@ const Candidate = ({ params }: { params: { id: string } }) => {
               <Image
                 className="mb-1 mt-6 rounded-xl shadow-lg"
                 alt={candidate.name.first}
-                src={candidate.picture.large}
+                src={candidate.picture}
                 width={300}
                 height={300}
               />

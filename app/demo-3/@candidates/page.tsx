@@ -22,11 +22,10 @@ const CandidatesPage = async () => {
                 <Image
                   className="mb-1 mt-2 rounded-xl shadow-lg"
                   alt={candidate.name.first}
-                  src={candidate.picture.large}
+                  src={candidate.picture}
                   width={90}
                   height={90}
                 />
-                <p className="pt-3 text-sm">{candidate.country}</p>
               </CardContent>
             </Card>
           </Link>

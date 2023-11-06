@@ -33,7 +33,7 @@ const Candidate = () => {
 
   return (
     <>
-      <h2>Candidates in process</h2>
+      <h2>People</h2>
       <section className="flex flex-col flex-wrap items-center space-y-4 md:flex-row md:gap-4 md:space-y-0">
         {candidatesLoading && <CandidatesSkeleton />}
 
@@ -52,11 +52,10 @@ const Candidate = () => {
                   <Image
                     className="mb-1 mt-2 rounded-xl shadow-lg"
                     alt={person.name.first}
-                    src={person.picture.large}
+                    src={person.picture}
                     width={90}
                     height={90}
                   />
-                  <p className="pt-3 text-sm">{person.country}</p>
                 </CardContent>
               </Card>
             </Link>
