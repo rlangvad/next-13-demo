@@ -2,12 +2,23 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 import { Candidate } from "@/types/Candidate";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const Candidate = ({ params }: { params: { id: string } }) => {
   const [open, setOpen] = useState(true);
   const [candidate, setCandidate] = useState<Candidate | null>(null);
+
+  const router = useRouter();
+
+  const handleDialogChange = (value: boolean) => {
+    if (!value) {
+      router.back();
+    }
+    setOpen(value);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +36,7 @@ const Candidate = ({ params }: { params: { id: string } }) => {
   return (
     <>
       {candidate && (
-        <Dialog open={open} onOpenChange={setOpen}>
+        <Dialog open={open} onOpenChange={() => handleDialogChange(!open)}>
           <DialogContent>
             <div className="my-10 flex flex-col items-center space-y-5">
               <h1 className="mb-2 text-4xl font-semibold">
